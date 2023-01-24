@@ -7,19 +7,11 @@
     tools:context=".ResponseActivity">
 
     <TextView
-        android:id="@+id/nome_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="261dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/idade_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="307dp"
-        android:layout_marginEnd="134dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="140dp"
         android:text="@string/textview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,8 +21,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="7dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginBottom="72dp"
         android:text="@string/textview"
         app:layout_constraintBottom_toTopOf="@+id/idade_tv"
         app:layout_constraintEnd_toEndOf="@+id/idade_tv" />
+
+    <Button
+        android:id="@+id/open_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openweb"
+        android:text="@string/open_site"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
 </androidx.constraintlayout.widget.ConstraintLayout>

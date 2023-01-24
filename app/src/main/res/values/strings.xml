@@ -5,4 +5,7 @@
     <string name="name">Name</string>
     <string name="bv">BemVindo</string>
     <string name="textview">TextView</string>
+    <string name="non">Nome:</string>
+    <string name="idd">Idade:</string>
+    <string name="open_site">Open Site</string>
 </resources>

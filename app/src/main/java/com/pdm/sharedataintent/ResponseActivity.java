@@ -2,6 +2,8 @@ package com.pdm.sharedataintent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -21,8 +23,28 @@ public class ResponseActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         if ( extras != null) {
-            reponseBinding.nomeTv.setText( extras.getString("nome")  );
-            reponseBinding.idadeTv.setText(  extras.getString("idade"));
+            reponseBinding.nameTv.setText( getString(R.string.non) + " " + extras.getString("nome")  );
+            reponseBinding.idadeTv.setText( getString(R.string.idd)  + extras.getString("idade"));
         }
+
+        //finish();
     }
+
+    public void finish(){
+        Intent data = new Intent();
+        data.putExtra("resultado", "Nos somos Maus a Android! xD");
+        setResult(RESULT_OK,data);
+        super.finish();
+    }
+
+    public void openweb(View view){
+
+        Intent intent = new Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://github.com/ataidechilaule"));
+        startActivity(intent);
+
+    }
+
+
+
 }
